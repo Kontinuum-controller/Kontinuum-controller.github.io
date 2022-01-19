@@ -1,3 +1,6 @@
 title: Kontinuum-controller
 description: A Kubernetes controller that makes deploying the cloud to edge continuum a breeze.
 theme: jekyll-theme-cayman
+github:
+  is_project_page: true
+  repository_url: https://github.com/danielhass/Kontinuum-controller
