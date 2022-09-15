@@ -12,7 +12,7 @@ Many modern IT application architectures (e.g. in the field of IIoT) are spannin
 
 The following figure shows a generic IIoT architecture where each cloud and edge notion might be composed of one or multiple Kubernetes cluster:
 
-<img src="img/Cloud-to-Things-Continuum.png" alt="Cloud-to-Things-Continuum" class="inline"/>
+<img src="img/wf-continuum-arch.png" alt="Cloud-to-Things-Continuum" class="inline"/>
 
 # Project building blocks
 
@@ -28,7 +28,7 @@ The Kontinuum-controller is suitable for any application architecture that is de
 
 The figure below shows an overview of the overall platform design and components:
 
-<img src="img/Concept-Overview-1.png" alt="Concept-Overview" class="inline"/>
+<img src="img/platform-overview-implementation.png" alt="Platform-Overview" class="inline"/>
 
 # Benefits
 
@@ -71,7 +71,7 @@ On the target clusters:
 ### Workload CRD
 
 ```yaml
-apiVersion: kontinuum-controller.github.io/v1alpha1
+apiVersion: crd.kontinuum-controller.github.io/v1alpha1
 kind: Workload
 metadata:
   name: workload-1
@@ -111,7 +111,7 @@ spec:
 ### Overlay CRD
 
 ```yaml
-apiVersion: kontinuum-controller.github.io/v1alpha1
+apiVersion: crd.kontinuum-controller.github.io/v1alpha1
 kind: Overlay
 metadata:
   name: arm-clusters-switzerland
@@ -153,7 +153,7 @@ spec:
 ### Target CRD
 
 ```yaml
-apiVersion: kontinuum-controller.github.io/v1alpha1
+apiVersion: crd.kontinuum-controller.github.io/v1alpha1
 kind: Target
 metadata:
   name: edge-custer-1
